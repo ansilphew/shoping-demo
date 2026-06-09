@@ -1,0 +1,111 @@
+import {
+  wanderMoreTee,
+  neverGiveUpTee,
+  believeYourselfTee,
+  plainBlackTee,
+  stayStrongSweatshirt,
+  exploreUnknownSweatshirt,
+  plainBlackHoodie,
+  focusGoalsHoodie,
+  riseAboveHoodie,
+} from "../assets";
+
+export const products = [
+  // ── T-Shirts ────────────────────────────────────────────────────────────
+  {
+    id: 1,
+    name: "Wander More Tee",
+    price: 1299,
+    category: "T-Shirts",
+    sizes: ["S", "M", "L", "XL"],
+    description: "Wander More, Worry Less. Mountain graphic on premium heavyweight black cotton.",
+    color: "#1a1a1a",
+    image: wanderMoreTee,
+  },
+  {
+    id: 2,
+    name: "Never Give Up Tee",
+    price: 1499,
+    category: "T-Shirts",
+    sizes: ["M", "L", "XL"],
+    description: "There is no substitute for hard work. Bold motivational graphic on jet-black cotton.",
+    color: "#1a1a1a",
+    image: neverGiveUpTee,
+  },
+  {
+    id: 3,
+    name: "Believe In Yourself Tee",
+    price: 1399,
+    category: "T-Shirts",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    description: "Dream. Plan. Do. Make It Happen. Vintage-style mountain print on black cotton.",
+    color: "#1a1a1a",
+    image: believeYourselfTee,
+  },
+  {
+    id: 4,
+    name: "Classic Black Tee",
+    price: 999,
+    category: "T-Shirts",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    description: "The essential. 100% organic ring-spun cotton. Keeps its shape, drop after drop.",
+    color: "#1a1a1a",
+    image: plainBlackTee,
+  },
+
+  // ── Sweatshirts ──────────────────────────────────────────────────────────
+  {
+    id: 5,
+    name: "Stay Strong Sweatshirt",
+    price: 2299,
+    category: "Sweatshirts",
+    sizes: ["S", "M", "L", "XL"],
+    description: "Work Hard. Dream Big. Never Give Up. Heavy fleece sweatshirt with bold graphic.",
+    color: "#1a1a1a",
+    image: stayStrongSweatshirt,
+  },
+  {
+    id: 6,
+    name: "Explore The Unknown Sweatshirt",
+    price: 2499,
+    category: "Sweatshirts",
+    sizes: ["S", "M", "L", "XL"],
+    description: "Life Is An Adventure — Make It Count. Wilderness graphic on premium French terry.",
+    color: "#1a1a1a",
+    image: exploreUnknownSweatshirt,
+  },
+
+  // ── Hoodies ──────────────────────────────────────────────────────────────
+  {
+    id: 7,
+    name: "Classic Black Hoodie",
+    price: 2799,
+    category: "Hoodies",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    description: "The foundation piece. Oversized fit, kangaroo pocket, brushed fleece interior.",
+    color: "#1a1a1a",
+    image: plainBlackHoodie,
+  },
+  {
+    id: 8,
+    name: "Focus On Your Goals Hoodie",
+    price: 2999,
+    category: "Hoodies",
+    sizes: ["S", "M", "L", "XL"],
+    description: "Discipline Today. Success Tomorrow. Statement graphic hoodie in heavy-weight fleece.",
+    color: "#1a1a1a",
+    image: focusGoalsHoodie,
+  },
+  {
+    id: 9,
+    name: "Rise Above Hoodie",
+    price: 3199,
+    category: "Hoodies",
+    sizes: ["M", "L", "XL"],
+    description: "Your Only Limit Is You. Brushstroke graphic hoodie, oversized silhouette.",
+    color: "#1a1a1a",
+    image: riseAboveHoodie,
+  },
+];
+
+export const categories = ["All", ...new Set(products.map((p) => p.category))];
